@@ -28,7 +28,7 @@ const Cart = () => {
   const createOrder = async (data) => {
     try {
       const res = await axiosInstance.post(
-        "http://localhost:3001/api/orders",
+        "https://order-app-bay.vercel.app/api/orders",
         data,
       );
       if (res.status === 200) {

@@ -23,7 +23,7 @@ export default function Home({ pizzaList }) {
 
 export const getServerSideProps = async () => {
   const res = await axiosInstance.get(
-    "http://localhost:3001/api/products",
+    "https://order-app-bay.vercel.app/api/products",
   );
 
   return {
